@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 20px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 1000;
+    opacity: 95;
+}
+
+/* Logo Styling */
+.logo {
+    height: 90px ; /* Adjust based on logo size */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: black;
+    margin: 0;padding: 0;
+    align-items: center;
+    height: 100vh;
+  }
+   
+  .boxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 160px; /* Adjusted for max animation height */
+    --boxSize: 20px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+}
+
+.box {
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #259c41;
+    animation: wave 2s infinite ease-in-out;
+    border-radius: 300px;
+    animation-play-state: running; /* Default state */
+}
+
+@keyframes wave {
+    0% { 
+        height: 10px;
+        background: #222;
+    }
+    25% { 
+        height: 150px;
+        background: #259c41;
+     }
+    50% { 
+        height: 10px;
+        background: #222;
+    }
+    100% { 
+        height: 10px;
+        background: #222;
+    }
+}
+
+.boxContainer :nth-child(1){
+    animation-delay: 0.2s;
+}
+
+.boxContainer :nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.boxContainer :nth-child(3){
+    animation-delay: 0.6s;
+}
+
+.boxContainer :nth-child(4){
+    animation-delay: 0.8s;
+}
+
+.boxContainer :nth-child(5){
+    animation-delay: 1s;
+}
+
+/* Navbar Links */
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #259c41; /* Highlight effect */
+}
+
+/* Push content below fixed navbar */
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.center-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+}
+
+button {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Space Mono", monospace;
+    padding: 8px 15px;
+    background-color: #259c41;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #259c41;
+}
+
+/* Background Image Styling */
+.index-background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Ensures it starts at the top left */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Calculator Styling */
+.calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 0;
+    
+}
+
+.pricing-background {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Ensures it starts at the top left */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.toggleButton img{
+    size: 300px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-container input{
+    background-color: #222;
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+    color: #259c41;
+}
+
+.searchButton{
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #259c41;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

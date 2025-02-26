@@ -1,0 +1,101 @@
+.socials-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body {
+    background: #D0D8DB;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.svg-inline--fa {
+    vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* More spacing */
+    flex-wrap: wrap;
+}
+
+.rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 130px; /* Larger buttons */
+    height: 130px;
+    border: 0.3rem solid #259c41; /* Thicker green border */
+    text-decoration: none;
+    text-align: center;
+    color: #259c41;
+    font-size: 85px; /* Bigger icons */
+    line-height: 130px; /* Centers icon */
+    border-radius: 50%; /* Circular shape */
+    transition: all 0.5s ease;
+    background: #000000;
+}
+
+.rounded-social-buttons .social-button:hover, 
+.rounded-social-buttons .social-button:focus {
+    background: #259c41 !important; /* Switch to green on hover */
+    color: #000000; /* Switch icon color to black */
+    border-color: #000000; /* Switch border to black */
+    transform: rotate(360deg);
+}
+
+/* Specific buttons */
+.rounded-social-buttons .social-button.instagram {
+    font-family: "FontAwesome";
+}
+
+.rounded-social-buttons .social-button.soundcloud {
+    font-family: "FontAwesome";
+}
+
+.rounded-social-buttons .social-button.phone {
+    font-family: "FontAwesome";
+}
+
+.rounded-social-buttons .social-button.gmail {
+    font-family: "FontAwesome";
+}
+
+/* FontAwesome Icons */
+.rounded-social-buttons .fa-instagram,
+.rounded-social-buttons .fa-soundcloud,
+.rounded-social-buttons .fa-phone,
+.rounded-social-buttons .fa-envelope {
+    font-size: 85px;
+    text-align: center;
+}
